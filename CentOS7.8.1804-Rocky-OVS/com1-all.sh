@@ -5,13 +5,13 @@ source function.sh
 source config.sh
 
 echocolor "IP address"
-source com-0-ipaddr.sh
+source com1-0-ipaddr.sh
 
 echocolor "Environment"
 source com-1-environment.sh
 
 echocolor "Nova"
-source com-2-nova.sh
+source com1-2-nova.sh
 
 echocolor "Neutron"
-source com-3-neutron-selfservice.sh
+source com1-3-neutron-selfservice.sh
