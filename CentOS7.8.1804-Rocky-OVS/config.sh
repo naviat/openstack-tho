@@ -10,32 +10,32 @@ sleep 3
 
 #  Ipaddress variable and Hostname variable
 ## Assigning IP for controller node
-CTL_EXT_IP=10.0.2.4
+CTL_EXT_IP=10.0.2.4                     # NAT IP
 CTL_EXT_NETMASK=255.255.255.0
-CTL_EXT_IF=enp0s8
-CTL_MGNT_IP=192.168.99.100
+CTL_EXT_IF=enp0s8                       # NAT interface name
+CTL_MGNT_IP=192.168.99.100              # Host-only IP
 CTL_MGNT_NETMASK=255.255.255.0
-CTL_MGNT_IF=enp0s3
+CTL_MGNT_IF=enp0s3                      # Host-only Interface name
 
 ## Assigning IP for Compute host
-COM1_EXT_IP=10.0.2.5
+COM1_EXT_IP=10.0.2.5                    # NAT IP
 COM1_EXT_NETMASK=255.255.255.0
-COM1_EXT_IF=enp0s8
-COM1_MGNT_IP=192.168.99.101
+COM1_EXT_IF=enp0s8                      # NAT interface name
+COM1_MGNT_IP=192.168.99.101             # Host-only IP
 COM1_MGNT_NETMASK=255.255.255.0
-COM1_MGNT_IF=enp0s3
+COM1_MGNT_IF=enp0s3                     # Host-only Interface name
 
-COM2_EXT_IP=10.0.2.6
+COM2_EXT_IP=10.0.2.6                    # NAT IP
 COM2_EXT_NETMASK=255.255.255.0
-COM2_EXT_IF=enp0s8
-COM2_MGNT_IP=192.168.99.102
+COM2_EXT_IF=enp0s8                      # NAT interface name
+COM2_MGNT_IP=192.168.99.102             # Host-only IP
 COM2_MGNT_NETMASK=255.255.255.0
-COM2_MGNT_IF=enp0s3
+COM2_MGNT_IF=enp0s3                     # Host-only Interface name
 
 ## Gateway for EXT network
-GATEWAY_EXT_IP=10.0.2.1
-CIDR_EXT=192.168.2.0/24
-CIDR_MGNT=192.168.99.0/24
+GATEWAY_EXT_IP=10.0.2.1                 # NAT Gateway IP
+CIDR_EXT=192.168.2.0/24                 
+CIDR_MGNT=192.168.99.0/24               # Host-only Network
 PREFIX_EXT=24
 PREFIX_MGNT=24
 DHCP_START=10.0.2.180
