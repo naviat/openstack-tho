@@ -29,7 +29,7 @@ EOF
 openvswitch_uninstall() {
 	echocolor "Uninstall openvswitch"
 	sleep 3
-	if ! ovs-vsctl then 
+	if [! ovs-vsctl]; then 
 		ovs-vsctl del-br br-provider
 		ovs-vsctl del-br br-tun
 		ovs-vsctl del-br br-int
