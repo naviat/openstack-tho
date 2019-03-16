@@ -7,7 +7,7 @@ source config.sh
 
 # Function uninstall components
 components_uninstall () {
-	echocolor "Uninstall nova-compute"
+	echocolor "Uninstall components"
 	sleep 3
 	yum remove -y '*openstack*' '*nova*' '*neutron*'
 
@@ -29,11 +29,11 @@ EOF
 openvswitch_uninstall() {
 	echocolor "Uninstall openvswitch"
 	sleep 3
-	
-	ovs-vsctl del-br br-provider
-	ovs-vsctl del-br br-tun
-	ovs-vsctl del-br br-int
-
+	if ! ovs-vsctl then 
+		ovs-vsctl del-br br-provider
+		ovs-vsctl del-br br-tun
+		ovs-vsctl del-br br-int
+	fi
 	sleep 3
 
 	yum remove -y openvswitch
