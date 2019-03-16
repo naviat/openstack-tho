@@ -1,9 +1,9 @@
-## Install OpenStack with script - Rocky in Ubuntu 18.04
+# Install OpenStack with script - Rocky in Ubuntu 18.04
 
 Yêu cầu:
 
-	- Cài đặt trên Ubuntu Server 18.04 64bits LTS
-	- Mỗi máy đều có 02 NIC: public + private
+- Cài đặt trên Ubuntu Server 18.04 64bits LTS
+- Mỗi máy đều có 02 NIC: public + private
 
 Mặc định các script đều cài OpenStack với OpenvSwitch. không sử dụng linux bridge.
 

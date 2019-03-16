@@ -1,4 +1,4 @@
-## Hướng dẫn
+# Hướng dẫn
 
 Đây là nơi lưu trữ script cài đặt OpenStack để trải nghiệm tính năng
 
