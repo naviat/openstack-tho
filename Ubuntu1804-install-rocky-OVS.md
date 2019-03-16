@@ -99,19 +99,19 @@ git clone https://github.com/naviat/openstack-tho.git
 Cho script quyền thực thi. Ở đây tôi cài rocky trên Ubuntu 18.04. Sử dụng Switch là OpenvSwitch
 
 ```sh
-chmod +x install-OpenStack/Ubuntu1604-Rocky-OVS/*.sh
+chmod +x openstack-tho/Ubuntu1604-Rocky-OVS/*.sh
 ```
 
-Chỉnh sửa lại thông tin trong file `install-OpenStack/Ubuntu1604-Rocky-OVS/config.sh` các thông tin phù hợp
+Chỉnh sửa lại thông tin trong file `openstack-tho/Ubuntu1604-Rocky-OVS/config.sh` các thông tin phù hợp
 
 Chạy lệnh cài đặt trên node controller:
 
 ```sh
-cd install-OpenStack/Ubuntu1604-Rocky-OVS/ && ./ctl-all.sh
+cd openstack-tho/Ubuntu1604-Rocky-OVS/ && ./ctl-all.sh
 ```
 
 Chạy lệnh cài đặt trên node compute1:
 
 ```sh
-cd install-OpenStack/Ubuntu1604-Rocky-OVS/ && ./com-all.sh
+cd openstack-tho/Ubuntu1604-Rocky-OVS/ && ./com-all.sh
 ```

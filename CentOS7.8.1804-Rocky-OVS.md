@@ -28,23 +28,23 @@ git clone https://github.com/naviat/openstack-tho.git
 Cho script quyền thực thi.
 
 ```sh
-chmod +x install-OpenStack/CentOS7.8.1804-Rocky-OVS/*.sh
+chmod +x openstack-tho/CentOS7.8.1804-Rocky-OVS/*.sh
 ```
 
 Chỉnh sửa lại các thông tin phù hợp trong file.
 
 ```sh
-vim install-OpenStack/CentOS7.8.1804-Rocky-OVS/config.sh
+vim openstack-tho/CentOS7.8.1804-Rocky-OVS/config.sh
 ```
 
 Chạy lệnh cài đặt trên node controller:
 
 ```sh
-cd install-OpenStack/CentOS7.8.1804-Rocky-OVS/ && ./ctl-all.sh
+cd openstack-tho/CentOS7.8.1804-Rocky-OVS/ && ./ctl-all.sh
 ```
 
 Chạy lệnh cài đặt trên node compute1:
 
 ```sh
-cd install-OpenStack/CentOS7.8.1804-Rocky-OVS/ && ./com-all.sh
+cd openstack-tho/CentOS7.8.1804-Rocky-OVS/ && ./com-all.sh
 ```
