@@ -42,18 +42,22 @@ clean_lib_log () {
 
 
 ## Uninstall components
-components_uninstall
+if ! rpm -qa | grep -qw '*openstack*'; then
+    components_uninstall
+fi
+
+#components_uninstall
 
 ## Uninstall openvswitch
-openvswitch_uninstall
+#openvswitch_uninstall
 
 ## Cleaning
-clean_lib_log
+#clean_lib_log
 
 echocolor '                            _             _
                            | |           | |
   ___  _ __   ___ _ __  ___| |_ __ _  ___| | __
- / _ \| '_ \ / _ \ '_ \/ __| __/ _` |/ __| |/ /
+ / _ \| '\_ \ / \_ \ '_ \/ __| __/ _` |/ __| |/ /
 | (_) | |_) |  __/ | | \__ \ || (_| | (__|   <
  \___/| .__/ \___|_| |_|___/\__\__,_|\___|_|\_\
       | |
