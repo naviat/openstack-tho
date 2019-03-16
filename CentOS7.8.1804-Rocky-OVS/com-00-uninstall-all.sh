@@ -29,17 +29,15 @@ EOF
 openvswitch_uninstall() {
 	echocolor "Uninstall openvswitch"
 	sleep 3
-	if hash ovs-vsctl 2>/dev/null; then 
-		echocolor "You uninstalled it before, right!"
+	if ! [ -x "$(command -v ovs-vsctl)" ]; then 
+		echocolor "You are not install it before, right!"
 	else
 		ovs-vsctl del-br br-provider
 		ovs-vsctl del-br br-tun
 		ovs-vsctl del-br br-int
+		yum remove -y openvswitch
 	fi
 	sleep 3
-
-	yum remove -y openvswitch
-
 	echocolor "--Done--"
 
 }
