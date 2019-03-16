@@ -58,7 +58,7 @@ horizon_restart () {
 horizon_infomation () {
 	echocolor "HORIZON INFORMATION"
 	echo "LOGIN INFORMATION IN HORIZON"
-	echo "URL: http://$CTL_MGNT_IP/dashboard"
+	echo "URL: http://$CTL_MGNT_IP/dashboard"    # Use host-only IP when install in virtualbox (otherwise use CTL_EXT_IP)
 	echo "Domain: default"
 	echo "User: admin (or demo)"
 	echo "Password: $ADMIN_PASS (or $DEMO_PASS)"
