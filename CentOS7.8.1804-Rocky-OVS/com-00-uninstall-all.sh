@@ -40,14 +40,15 @@ clean_lib_log () {
     echocolor "---Done---"    
 }
 
-## Restart Network
-systemctl restart network
 
-## Uninstall Nova
-nova_uninstall
+## Uninstall components
+components_uninstall
 
-## Uninstall Neutron
-neutron_uninstall
+## Uninstall openvswitch
+openvswitch_uninstall
+
+## Cleaning
+clean_lib_log
 
 echocolor "
                             _             _    
