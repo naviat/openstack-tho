@@ -58,7 +58,7 @@ horizon_restart () {
 horizon_infomation () {
 	echocolor "HORIZON INFORMATION"
 	echo "LOGIN INFORMATION IN HORIZON"
-	echo "URL: http://$CTL_EXT_IP/dashboard"
+	echo "URL: http://$CTL_MGNT_IP/dashboard"
 	echo "Domain: default"
 	echo "User: admin (or demo)"
 	echo "Password: $ADMIN_PASS (or $DEMO_PASS)"
