@@ -37,28 +37,15 @@ clean_lib_log () {
 	rm -rf /var/lib/nova /etc/nova /etc/neutron /etc/openvswitch /var/log/nova /var/log/openvswitch /var/log/neutron
 	sleep 3
 
-    echocolor "---Done---"    
+    echocolor "---DONE---"    
 }
 
 
 ## Uninstall components
-if ! rpm -qa | grep -qw '*openstack*'; then
-    components_uninstall
-fi
-
-#components_uninstall
+components_uninstall
 
 ## Uninstall openvswitch
-#openvswitch_uninstall
+openvswitch_uninstall
 
 ## Cleaning
-#clean_lib_log
-
-echocolor '                            _             _
-                           | |           | |
-  ___  _ __   ___ _ __  ___| |_ __ _  ___| | __
- / _ \| '\_ \ \/ \_ \ '_ \/ __| __/ _` |/ __| |/ /
-| (_) | |_) |  __/ | | \__ \ || (_| | (__|   <
- \___/| .__/ \___|_| |_|___/\__\__,_|\___|_|\_\
-      | |
-      |_|'
+clean_lib_log
