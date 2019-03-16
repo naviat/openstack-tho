@@ -11,6 +11,7 @@ components_uninstall () {
 	sleep 3
 	yum remove -y '*openstack*' '*nova*' '*neutron*'
 
+	echocolor "Restore Network config"
 	cat << EOF > /etc/sysconfig/network-scripts/ifcfg-$COM2_EXT_IF
 DEVICE=$COM2_EXT_IF
 BOOTPROTO=none
@@ -62,3 +63,5 @@ openvswitch_uninstall
 
 ## Cleaning
 clean_lib_log
+
+reboot
