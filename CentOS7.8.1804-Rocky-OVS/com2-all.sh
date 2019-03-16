@@ -15,3 +15,5 @@ source com2-2-nova.sh
 
 echocolor "Neutron"
 source com2-3-neutron-selfservice.sh
+
+echo -e "\033[1;31m -FINISH- \033[0m"
