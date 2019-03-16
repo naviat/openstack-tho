@@ -34,7 +34,7 @@ chmod +x openstack-tho/CentOS7.8.1804-Rocky-OVS/*.sh
 Chỉnh sửa lại các thông tin phù hợp trong file.
 
 ```sh
-vim openstack-tho/CentOS7.8.1804-Rocky-OVS/config.sh
+nano openstack-tho/CentOS7.8.1804-Rocky-OVS/config.sh
 ```
 
 Chạy lệnh cài đặt trên node controller:
