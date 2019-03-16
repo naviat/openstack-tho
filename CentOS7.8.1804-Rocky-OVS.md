@@ -1,5 +1,7 @@
 # Install OpenStack with script - CentOS-7.8
 
+Thay đổi yêu cầu theo server/IP của UET.
+
 Yêu cầu:
 
 - Cài đặt trên CentOS 7.5 1804 64bits
