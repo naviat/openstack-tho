@@ -1,8 +1,6 @@
 #!/bin/bash
 #Author Dam Van Hai
 
-source ./com2-0-ipaddr.sh
-
 # Function uninstall nova-compute
 nova_uninstall () {
 	echocolor "Uninstall nova-compute"
