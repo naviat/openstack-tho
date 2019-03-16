@@ -44,8 +44,6 @@ NETMASK=$COM1_MGNT_NETMASK
 DEFROUTE=no
 EOF
 
-EOF
-
 	ip a flush $COM1_EXT_IF
 	ip a flush $COM1_MGNT_IF
 
