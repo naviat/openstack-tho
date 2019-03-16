@@ -27,3 +27,5 @@ source ctl-6-horizon.sh
 
 # echocolor "Create Network and Flavor"
 # source ctl-7-create_network.sh
+
+echo -e "\033[1;31m -FINISH- \033[0m"
