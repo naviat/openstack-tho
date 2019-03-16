@@ -93,7 +93,7 @@ EOF
 Sau đó tải script cài đặt về:
 
 ```sh
-git clone https://github.com/naviat/install-OpenStack.git
+git clone https://github.com/naviat/openstack-tho.git
 ```
 
 Cho script quyền thực thi. Ở đây tôi cài rocky trên Ubuntu 18.04. Sử dụng Switch là OpenvSwitch

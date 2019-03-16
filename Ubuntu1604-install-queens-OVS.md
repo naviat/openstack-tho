@@ -1,9 +1,9 @@
-## Install OpenStack with script - Queen in Ubuntu 16.04
+# Install OpenStack with script - Queen in Ubuntu 16.04
 
 Yêu cầu:
 
-	- Cài đặt trên Ubuntu Server 16.04 64bits LTS
-	- Mỗi máy đều có 02 NIC: public + private
+- Cài đặt trên Ubuntu Server 16.04 64bits LTS
+- Mỗi máy đều có 02 NIC: public + private
 
 Mặc định các script đều cài OpenStack với OpenvSwitch. không sử dụng linux bridge.
 
@@ -28,7 +28,7 @@ apt update -y && apt dist-upgrade -y && apt install git -y
 Sau đó tải script cài đặt về:
 
 ```sh
-git clone https://github.com/naviat/install-OpenStack.git
+git clone https://github.com/naviat/openstack-tho.git
 ```
 
 Cho script quyền thực thi. Ở đây tôi cài Queens trên Ubuntu 16.04. Sử dụng Switch là OpenvSwitch
