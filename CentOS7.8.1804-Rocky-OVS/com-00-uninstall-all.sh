@@ -5,7 +5,7 @@ source function.sh
 source config.sh
 
 
-# Function uninstall nova-compute
+# Function uninstall components
 components_uninstall () {
 	echocolor "Uninstall nova-compute"
 	sleep 3
@@ -50,13 +50,11 @@ openvswitch_uninstall
 ## Cleaning
 clean_lib_log
 
-echocolor "
-                            _             _    
-                           | |           | |   
+echocolor '                            _             _
+                           | |           | |
   ___  _ __   ___ _ __  ___| |_ __ _  ___| | __
  / _ \| '_ \ / _ \ '_ \/ __| __/ _` |/ __| |/ /
-| (_) | |_) |  __/ | | \__ \ || (_| | (__|   < 
+| (_) | |_) |  __/ | | \__ \ || (_| | (__|   <
  \___/| .__/ \___|_| |_|___/\__\__,_|\___|_|\_\
-      | |                                      
-      |_|                                      
-"
+      | |
+      |_|'
