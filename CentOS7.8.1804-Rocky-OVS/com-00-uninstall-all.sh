@@ -4,9 +4,6 @@
 source function.sh
 source config.sh
 
-if ! rpm -qa | grep -qw glibc-static; then
-    yum install glibc-static
-fi
 
 # Function uninstall nova-compute
 components_uninstall () {
