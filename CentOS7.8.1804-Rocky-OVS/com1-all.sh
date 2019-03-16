@@ -8,7 +8,7 @@ echocolor "IP address"
 source com1-0-ipaddr.sh
 
 echocolor "Environment"
-source com-1-environment.sh
+source com1-1-environment.sh
 
 echocolor "Nova"
 source com1-2-nova.sh
