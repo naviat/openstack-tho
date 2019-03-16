@@ -1,6 +1,9 @@
 #!/bin/bash
 #Author Dam Van Hai
 
+source function.sh
+source config.sh
+
 # Function uninstall nova-compute
 nova_uninstall () {
 	echocolor "Uninstall nova-compute"
