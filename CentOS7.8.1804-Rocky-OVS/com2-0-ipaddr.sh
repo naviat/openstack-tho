@@ -69,7 +69,7 @@ sleep 3
 config_hostname
 
 ## IP address
-#config_ip
+config_ip
 
 ## Config software of Centos
 config_software
