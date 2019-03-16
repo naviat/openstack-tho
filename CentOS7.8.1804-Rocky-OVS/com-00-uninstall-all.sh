@@ -17,8 +17,8 @@ neutron_uninstall () {
 	sleep 3
 
 	yum remove openstack-neutron-openvswitch ebtables ipset -y
-	
-	systemctl restart openvswitch
+
+    echocolor "---DONE--"    
 }
 
 ## Restart Network
