@@ -40,7 +40,7 @@ uninstall_ops_packages () {
 	echocolor "Uninstall OpenStack Component"
 	sleep 3
 	yum remove "*openstack*" "*nova*" "*keystone*" \
-				"*glance*" "*cinder*" "*neutron*"
+				"*glance*" "*cinder*" "*neutron*" -y
 	
 	# Warning! Dangerous step! Deletes local application data
 	rm -rf /root/.my.cnf /var/lib/glance /var/lib/nova /etc/nova /etc/swift \
@@ -54,3 +54,5 @@ uninstall_mq
 uninstall_memcached
 
 uninstall_ops_packages
+
+echo -e "\033[1;31m -REMOVED- \033[0m"
