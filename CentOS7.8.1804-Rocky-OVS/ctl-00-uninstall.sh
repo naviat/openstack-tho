@@ -73,6 +73,9 @@ uninstall_openvswitch() {
 		yum remove -y openvswitch
 	fi
 	sleep 3
+
+	systemctl restart network 
+	sleep 5
 	echocolor "--Done--"
 
 }
