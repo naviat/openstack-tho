@@ -113,10 +113,10 @@ glance_upload_image () {
 	sleep 3
 	source /root/admin-openrc
 	yum install wget -y
-	wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
+	wget http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
 
-	openstack image create "cirros-0.4.0" \
-	  --file cirros-0.4.0-x86_64-disk.img \
+	openstack image create "xenial-server-cloudimg-amd64-disk1" \
+	  --file xenial-server-cloudimg-amd64-disk1.img \
 	  --disk-format qcow2 --container-format bare \
 	  --public
 	  

@@ -9,7 +9,7 @@ uninstall_sql () {
 	echocolor "Uninstall SQL database - Mariadb"
 	sleep 3
 
-	yum remove MariaDB-server MariaDB-client python2-PyMySQL  -y
+	yum remove mariadb mariadb-server python2-PyMySQL  -y
 
 	rm -rf /var/lib/mysql
 
