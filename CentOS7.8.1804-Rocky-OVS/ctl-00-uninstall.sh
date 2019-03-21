@@ -70,7 +70,7 @@ uninstall_openvswitch() {
 		ovs-vsctl del-br br-provider
 		ovs-vsctl del-br br-tun
 		ovs-vsctl del-br br-int
-		yum remove -y openvswitch
+		yum remove -y "*openvswitch*"
 	fi
 	sleep 3
 

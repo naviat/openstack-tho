@@ -10,7 +10,7 @@ sleep 3
 
 #  Ipaddress variable and Hostname variable
 ## Assigning IP for controller node
-CTL_EXT_IP=192.168.122.41                # NAT IP
+CTL_EXT_IP=192.168.122.141                # NAT IP
 CTL_EXT_NETMASK=255.255.255.0
 CTL_EXT_IF=eth0                       # NAT interface name
 CTL_MGNT_IP=172.16.20.141              # Host-only IP
