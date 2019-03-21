@@ -44,7 +44,8 @@ uninstall_ops_packages () {
 	
 	# Warning! Dangerous step! Deletes local application data
 	rm -rf /root/.my.cnf /var/lib/glance /var/lib/nova /etc/nova /etc/swift \
-	/srv/node/device*/* /var/log/keystone
+	/srv/node/device*/* /var/log/keystone /etc/httpd/conf.d/00-nova-placement-api.conf \
+	/etc/keystone /etc/glance /etc/openstack-dashboard /etc/neutron /etc/my.cnf.d
 
 	echocolor "Restore Network config"
 	cat << EOF > /etc/sysconfig/network-scripts/ifcfg-$CTL_EXT_IF
@@ -73,6 +74,7 @@ uninstall_openvswitch() {
 		yum remove -y "*openvswitch*"
 	fi
 	sleep 3
+	rm -rf /etc/openvswitch /etc/rabbitmq
 
 	systemctl restart network 
 	sleep 5
