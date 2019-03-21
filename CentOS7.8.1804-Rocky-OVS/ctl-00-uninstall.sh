@@ -94,3 +94,7 @@ uninstall_ops_packages
 uninstall_openvswitch
 
 echo -e "\033[1;31m -REMOVED- \033[0m"
+
+echo -e "\033[1;31m --REBOOT-- \033[0m"
+
+reboot
